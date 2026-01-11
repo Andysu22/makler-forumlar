@@ -11,7 +11,7 @@ const port = process.env.SERVER_PORT || 24585;
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Egal welche Seite aufgerufen wird, gib immer die index.html zurück (für React Routing)
-app.get('*', (req, res) => {
+app.get('(.*)', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
