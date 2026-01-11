@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 // Den Port nehmen, den der Hoster uns gibt
-const port = process.env.SERVER_PORT || 3000;
+const port = process.env.SERVER_PORT || 24585;
 
 // Hier sagen wir: "Nimm die Dateien aus dem 'dist' Ordner"
 // (Der 'dist' Ordner wird gleich von React gebaut)
